@@ -252,6 +252,7 @@ footer > .copyright{
     header nav ul li{
         text-align: center;
         display: block;
+        font-size: 15px; ;
     }
     header nav ul li a{
         border-radius: 5px;
@@ -262,6 +263,7 @@ footer > .copyright{
         border-radius: 5px;
         color: black;
         padding: 7px 7px;
+        font-size: 15px;
     }
     #check:checked ~ ul{
         right:0%;
