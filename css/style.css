@@ -209,7 +209,23 @@ header nav ul li > div {
     font-size: 25px;
     text-decoration: underline;
 }
-
+footer{
+    background-color:#343a40 ;
+    color: #A7AEB4;
+}
+footer > .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer > .container > .item{
+    font-size: 15px;
+    width: 40%;
+    font-weight: 100;
+}
+footer > .container > .item>  h2{
+    color: white;
+    font-weight: 500;
+}
 
 
 
