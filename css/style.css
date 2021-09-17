@@ -216,7 +216,7 @@ footer{
 }
 footer > .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 5%;
 }
 footer > .container > .item{
@@ -228,8 +228,11 @@ footer > .container > .item>  h2,h1{
     color: white;
     font-weight: 500;
 }
-
-
+footer > .copyright{
+    padding: 3%;
+    text-align: center;
+    border-top: solid 1px rgb(104, 103, 103, 0.5) ;
+}
 
 
 @media (max-width:800px){
