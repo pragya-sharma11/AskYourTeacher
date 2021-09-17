@@ -338,4 +338,9 @@ footer > .copyright{
     header nav ul li > div {
         display: none;
     }
+    .img{
+        height:750px;
+        width:800px ;
+        background-size: 800px 750px;
+    }
 }
