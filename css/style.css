@@ -212,7 +212,7 @@ header nav ul li > div {
 footer{
     background-color:#343a40 ;
     color: #A7AEB4;
-    
+
 }
 footer > .container{
     display: flex;
@@ -225,7 +225,7 @@ footer > .container > .item{
     font-weight: 100;
     padding: 4%;
 }
-footer > .container > .item>  h2{
+footer > .container > .item>  h2,h1{
     color: white;
     font-weight: 500;
 }
