@@ -216,13 +216,23 @@ footer{
 }
 footer > .container{
     display: flex;
-    justify-content: space-around;
-    padding: 5%;
+    padding: 4%;
 }
 footer > .container > .item{
     font-size: 15px;
-    width: 40%;
+    width: 20%;
     font-weight: 100;
+}
+footer > .container > .item > div > input{
+    padding: 1%  !important;
+    font-size: 20px;
+    border-radius: 5px;
+}
+footer > .container > .item > div > button {
+    padding: 1% 10% !important;
+    font-size: 20px;
+    color: white;
+    background-color: cadetblue;
 }
 footer > .container > .item>  h2,h1{
     color: white;
