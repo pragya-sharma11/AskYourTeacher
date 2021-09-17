@@ -234,13 +234,16 @@ footer > .container > .item > div > input{
     font-size: 20px;
     border-radius: 5px;
     display: inline;
+    border : white solid 2px;
 }
 footer > .container > .item > div > button {
-    padding: 1% 10% !important;
+    padding: 2% 10% !important;
     font-size: 20px;
+    border-radius: 5px;
     color: white;
     display: inline;
-    background-color: cadetblue;
+    background-color: rgb(66, 145, 148);
+    border : none;
 }
 footer > .container > .item>  h2,h1{
     color: white;
@@ -349,6 +352,11 @@ footer > .copyright{
     }
     footer > .container > .item{
         width: 100%;
+    }
+    footer > .container > .item >  h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 600;
     }
 }
 
