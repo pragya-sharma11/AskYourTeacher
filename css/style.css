@@ -235,7 +235,64 @@ footer > .copyright{
 }
 
 
-@media (max-width:800px){
+
+
+
+@media (max-width:625px){
+    .show-btn,.hide-btn{
+        display : block;
+        transition : 0.3s;
+    }
+    header nav ul{
+        z-index: 3;
+        position: fixed;
+        right:-120%;
+        display: flex;
+        top: 50px;
+        transition: 0.3s;
+        padding: 2% 0%;
+    }
+    header nav ul li{
+        text-align: center;
+        display: block;
+        font-size: 15px; ;
+    }
+    header nav ul li a{
+        border-radius: 5px;
+        padding: 7px 7px;
+
+    }
+    #login, header nav ul li > div > button{
+        border-radius: 5px;
+        color: black;
+        padding: 7px 7px;
+        font-size: 15px;
+    }
+    #check:checked ~ ul{
+        right:0%;
+        width: 100%;
+        background-color: white;
+    }
+    #check:checked ~ .show-btn{
+        display: none;
+    }
+    .hide-btn{
+        position: absolute;
+        right: 10px;
+        top: -40px;
+    }
+    header nav ul li > div {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:800px) and (min-width:625px){
     .show-btn,.hide-btn{
         display : block;
         transition : 0.3s;
