@@ -13,7 +13,7 @@ header{
     padding: 2%;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     z-index: 3;
 }
 header h1{
@@ -248,7 +248,7 @@ footer > .copyright{
         position: fixed;
         right:-120%;
         display: flex;
-        top: 50px;
+        top: 55px;
         transition: 0.3s;
         padding: 2% 0%;
         width: auto;
@@ -308,9 +308,6 @@ footer > .copyright{
         z-index: 1;
     }
     .about > .row > div{
-        font-size: 21px;
-        color: rgb(113, 114, 112);
-        text-align: left;
         padding: 2%;
     }
     .about > .row > div > img {
@@ -319,20 +316,8 @@ footer > .copyright{
         display: block;
         margin: auto;
     }
-    .about > .row > div > h2{
-        position: relative;
-        top:20px;
-        font-size: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 1000 ;
-        display: block;
-        color: black;
-        margin-bottom: 2%;
-    }
-    .about > .row > div > p{
-        position: relative;
-        top:40px;
-    }
+
+
 }
 
 
