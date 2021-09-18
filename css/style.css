@@ -229,6 +229,14 @@ footer > .container > .item:nth-child(4){
 footer > .container > .item > div > p{
     margin: 3% 1%;
 }
+footer > .container > .item > div > p > a{
+    color: #A7AEB4;
+    text-decoration: none;
+}
+footer > .container > .item > div > p > a:hover{
+    color: white;
+    text-decoration: underline;
+}
 footer > .container > .item > div > input{
     padding: 1%  !important;
     font-size: 20px;
@@ -241,9 +249,11 @@ footer > .container > .item > div > button {
     font-size: 20px;
     border-radius: 5px;
     color: white;
-    display: inline;
     background-color: rgb(66, 145, 148);
     border : none;
+}
+footer > .container > .item > div > button:hover {
+    box-shadow: rgb(95, 237, 241) 3px 3px 3px 3px;
 }
 footer > .container > .item>  h2,h1{
     color: white;
@@ -269,7 +279,7 @@ footer > .copyright{
         position: fixed;
         right:-120%;
         display: flex;
-        top: 55px;
+        top: 45px;
         transition: 0.3s;
         padding: 2% 0%;
         width: auto;
@@ -332,8 +342,8 @@ footer > .copyright{
         padding: 2%;
     }
     .about > .row > div > img {
-        width: 400px;
-        height: 280px;
+        width: 90%;
+        height: 90%;
         display: block;
         margin: auto;
     }
@@ -376,7 +386,7 @@ footer > .copyright{
         position: fixed;
         right:-120%;
         display: flex;
-        top: 50px;
+        top: 45px;
         transition: 0.3s;
         padding: 2% 0%;
     }
