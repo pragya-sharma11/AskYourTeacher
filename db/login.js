@@ -1,14 +1,14 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
-var Uname="";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
+var Uname = document.getElementById('name');
 var provider = new GoogleAuthProvider();
-    let login = document.getElementById('login');
-    console.log(login);
-    login.onclick=(e)=>{
-        e.preventDefault();
+var login = document.getElementById('login');
+console.log(login);
+login.onclick=(e)=>{
+  e.preventDefault();
         
-const auth = getAuth();
-signInWithPopup(auth, provider)
-  .then((result) => {
+  const auth = getAuth();
+  signInWithPopup(auth, provider)
+    .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
@@ -17,11 +17,10 @@ signInWithPopup(auth, provider)
     console.log(user)
     //login.innerText=user.displayName;
     login.style.display = "none";
-    Uname = document.getElementById('name');
     Uname.innerText = user.displayName;
-
+    document.getElementById('hvr').style.display = 'inline';
     // ...user
-  }).catch((error) => {
+    }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
     const errorMessage = error.message;
@@ -33,7 +32,33 @@ signInWithPopup(auth, provider)
     // ...
   });
         
-    }
+}
+let logout = document.getElementById('logout')
+logout.onclick=(e)=>{
+  e.preventDefault();
+  signOut(auth);
+  login.style.display = "block";
+  Uname.innerText = "";
+  document.getElementById('hvr').style.display = 'none';
+
+}
+  
+
+
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    console.log("user exists")
+    // ...
+  } else {
+    // User is signed out
+    // ...
+    console.log("signout successful")
+  }
+});
 
 
 
