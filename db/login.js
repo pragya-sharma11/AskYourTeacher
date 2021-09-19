@@ -18,7 +18,7 @@ login.onclick=(e)=>{
     //login.innerText=user.displayName;
     login.style.display = "none";
     Uname.innerText = user.displayName;
-    document.getElementsByClassName('hover').style.display = 'inline';
+    document.getElementById('hover').style.display = 'inline';
     // ...user
     }).catch((error) => {
     // Handle Errors here.
@@ -39,7 +39,7 @@ logout.onclick=(e)=>{
   signOut(auth);
   login.style.display = "block";
   Uname.innerText = "";
-  document.getElementsByClassName('hover').style.display = 'none';
+  document.getElementById('hover').style.display = 'none';
 
 }
   
