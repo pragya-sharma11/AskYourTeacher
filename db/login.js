@@ -1,5 +1,5 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
-
+var Uname="";
 var provider = new GoogleAuthProvider();
     let login = document.getElementById('login');
     console.log(login);
@@ -17,8 +17,9 @@ signInWithPopup(auth, provider)
     console.log(user)
     //login.innerText=user.displayName;
     login.style.display = "none";
-    let Uname = document.getElementById('name');
+    Uname = document.getElementById('name');
     Uname.innerText = user.displayName;
+
     // ...user
   }).catch((error) => {
     // Handle Errors here.
