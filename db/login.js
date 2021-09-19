@@ -15,7 +15,10 @@ signInWithPopup(auth, provider)
     // The signed-in user info.
     const user = result.user;
     console.log(user)
-    login.innerText=user.displayName;
+    //login.innerText=user.displayName;
+    login.style.display = "none";
+    let Uname = document.getElementById('name');
+    Uname.innerText = user.displayName;
     // ...user
   }).catch((error) => {
     // Handle Errors here.
