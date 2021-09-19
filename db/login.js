@@ -1,9 +1,8 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js";
 
 var provider = new GoogleAuthProvider();
     let login = document.getElementById('login');
-    console.log(login)
-
+    console.log(login);
     login.onclick=(e)=>{
         e.preventDefault();
         
@@ -15,6 +14,7 @@ signInWithPopup(auth, provider)
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
+    console.log(user)
     // ...
   }).catch((error) => {
     // Handle Errors here.
@@ -24,6 +24,7 @@ signInWithPopup(auth, provider)
     const email = error.email;
     // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error);
+    console.log(error)
     // ...
   });
         
