@@ -52,15 +52,15 @@ header nav ul li a{
     display: block;
     width: 120px;
     border: none;
-    background-color: transparent;
+    background-color: white;
     color: rgb(100, 60, 60);
     font-weight: 100;
     font-size: 20px;
 }
-
 #hover {
     display: none;   
 }
+
 .img{
     background-image: url(https://preview.colorlib.com/theme/universityedu/assets/img/hero/xh1_hero1.jpg.pagespeed.ic.nogT7L3zFj.webp);
     background-position: center center;
