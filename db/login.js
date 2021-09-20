@@ -7,7 +7,7 @@ login.onclick=(e)=>{
   e.preventDefault();
         
   const auth = getAuth();
-  signInWithPopup(auth, provider)
+  await signInWithPopup(auth, provider)
     .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
     const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -17,8 +17,8 @@ login.onclick=(e)=>{
     console.log(user)
     //login.innerText=user.displayName;
     login.style.display = "none";
-    Uname.innerText = user.displayName;
-    document.getElementById('hover').style.display = 'inline';
+    Uname.innerText = user.displayName.slice(0,6)+"...";
+    //document.getElementById('hover').style.display = 'inline';
     // ...user
     }).catch((error) => {
     // Handle Errors here.

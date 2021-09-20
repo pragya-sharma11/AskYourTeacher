@@ -57,6 +57,9 @@ header nav ul li a{
     font-weight: 100;
     font-size: 20px;
 }
+#name:hover ~ #hover{
+    display: inline;
+}
 #hover {
     display: none;   
 }
@@ -280,6 +283,7 @@ footer > .copyright{
         position: fixed;
         right:-120%;
         display: flex;
+        flex-direction: column;
         top: 45px;
         transition: 0.3s;
         padding: 2% 0%;
@@ -297,11 +301,13 @@ footer > .copyright{
 
     }
     #login, header nav ul li > div > button{
-        border-radius: 5px;
         color: black;
         padding: 7px 7px;
         font-size: 15px;
+        display: block;
+        margin: auto;
     }
+    
     #check:checked ~ ul{
         right:0%;
         width: 100%;
@@ -387,6 +393,7 @@ footer > .copyright{
         position: fixed;
         right:-120%;
         display: flex;
+        flex-direction: column;
         top: 45px;
         transition: 0.3s;
         padding: 2% 0%;
@@ -406,6 +413,8 @@ footer > .copyright{
         color: black;
         padding: 7px 7px;
         font-size: 15px;
+        display: block;
+        margin: auto;
     }
     #check:checked ~ ul{
         right:0%;
