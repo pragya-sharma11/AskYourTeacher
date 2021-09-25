@@ -57,6 +57,7 @@ header nav ul li a{
     font-weight: 100;
     font-size: 20px;
 }
+
 #name:hover ~ #hover{
     display: inline;
 }
@@ -70,7 +71,7 @@ header nav ul li a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
-    opacity:1;
+    opacity:0.9;
 }
 .img > .container{
     margin-left: 60px ;
