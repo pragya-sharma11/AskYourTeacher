@@ -66,7 +66,7 @@ header nav ul li a{
 
 .courses{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
@@ -81,6 +81,7 @@ header nav ul li a{
     cursor: pointer;
     margin: 20px;
     border:rgb(46, 44, 44) solid 1px;
+    box-shadow: 5px 5px 15px black;
 }
 /* .bookmark{
     position: absolute;
@@ -130,3 +131,107 @@ header nav ul li a{
 .card:hover .content{
     height: 150px;
 }
+@media (max-width:625px){
+    .show-btn,.hide-btn{
+        display : block;
+        transition : 0.3s;
+    }
+    header nav ul{
+        z-index: 3;
+        position: fixed;
+        right:-120%;
+        display: flex;
+        flex-direction: column;
+        top: 45px;
+        transition: 0.3s;
+        padding: 2% 0%;
+        width: auto;
+        background-color: blanchedalmond;
+    }
+    header nav ul li{
+        text-align: center;
+        display: block;
+        font-size: 15px; ;
+    }
+    header nav ul li a{
+        border-radius: 5px;
+        padding: 7px 7px;
+
+    }
+    #login, header nav ul li > div > button{
+        color: black;
+        padding: 7px 7px;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+    }
+    
+    #check:checked ~ ul{
+        right:0%;
+        width: 100%;
+        background-color: white;
+    }
+    #check:checked ~ .show-btn{
+        display: none;
+    }
+    .hide-btn{
+        position: absolute;
+        right: 10px;
+        top: -40px;
+    }
+    #hover {
+        display: none;
+    }
+}
+@media (max-width:800px) and (min-width:625px){
+    .show-btn,.hide-btn{
+        display : block;
+        transition : 0.3s;
+    }
+    header nav ul{
+        z-index: 3;
+        position: fixed;
+        right:-120%;
+        display: flex;
+        flex-direction: column;
+        top: 45px;
+        transition: 0.3s;
+        padding: 2% 0%;
+    }
+    header nav ul li{
+        text-align: center;
+        display: block;
+        font-size: 15px; ;
+    }
+    header nav ul li a{
+        border-radius: 5px;
+        padding: 7px 7px;
+
+    }
+    #login, header nav ul li > div > button{
+        border-radius: 5px;
+        color: black;
+        padding: 7px 7px;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+    }
+    #check:checked ~ ul{
+        right:0%;
+        width: 100%;
+        background-color: white;
+    }
+    #check:checked ~ .show-btn{
+        display: none;
+    }
+    .hide-btn{
+        position: absolute;
+        right: 10px;
+        top: -40px;
+    }
+    #hover {
+        display: none;
+    }
+   
+}
+
