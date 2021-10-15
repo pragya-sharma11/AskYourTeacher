@@ -105,7 +105,7 @@ header nav ul li a{
     border: none;
     background: #007A5C;
     color: white;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .container > .row > button:hover{
     background-color: transparent;
