@@ -31,5 +31,8 @@ input:focus{
 button{
     padding: 1% 2%;
     font-size: 18px;
-    background-color: rgb(6, 85, 59);
+    background-color: rgb(6, 131, 89);
+    color: white;
+    border: none;
+    
 }
