@@ -4,6 +4,12 @@ var dsa = document.getElementById("dsa");
 var java = document.getElementById("java");
 var cn = document.getElementById("computerNetworks");
 var dbms = document.getElementById("dbms");
+var bookmarks = document.getElementsByClassName("bookmark");
+
+function toggleBookmark(a){
+   a.classList.toggle("toggleBookmark")
+}
+
 fullstack.onclick = () => {
   window.location = "../index.html?course=fullstack";
 };
