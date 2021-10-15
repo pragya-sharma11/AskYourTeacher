@@ -1,240 +1,241 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 html {
-    --top-spacing: 100px;
-    scroll-padding-top: var(--top-spacing);
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
 }
-header{
-    display: flex;
-    color: rgb(26, 25, 25);
-    padding: 2%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(255, 255, 255);
-    z-index: 3;
+header {
+  display: flex;
+  color: rgb(26, 25, 25);
+  padding: 2%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
 }
-header h1{
-    color: rgb(6, 110, 76);
-    width: 30%;
+header h1 {
+  color: rgb(6, 110, 76);
+  width: 30%;
 }
-header nav{
-    width: 70%;
-    line-height: 35px;
+header nav {
+  width: 70%;
+  line-height: 35px;
 }
-header nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
-#check{
-    visibility: hidden;
-    position: absolute;
+#check {
+  visibility: hidden;
+  position: absolute;
 }
-.show-btn, .hide-btn{
-    color: black;
-    font-size: 25px;
-    float: right;
-    display: none;
+.show-btn,
+.hide-btn {
+  color: black;
+  font-size: 25px;
+  float: right;
+  display: none;
 }
-header nav ul li{
-    font-size: 20px;
+header nav ul li {
+  font-size: 20px;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 100;
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
 }
-#login, header nav ul li div button{
-    padding: 5%;
-    display: block;
-    width: 120px;
-    border: none;
-    background-color: white;
-    color: rgb(100, 60, 60);
-    font-weight: 100;
-    font-size: 20px;
+#login,
+header nav ul li div button {
+  padding: 5%;
+  display: block;
+  width: 120px;
+  border: none;
+  background-color: white;
+  color: rgb(100, 60, 60);
+  font-weight: 100;
+  font-size: 20px;
 }
-#name:hover ~ #hover{
-    display: inline;
+#name:hover ~ #hover {
+  display: inline;
 }
 #hover {
-    display: none;   
+  display: none;
 }
 
-.courses{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
+.courses {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-
-.card{
-    width: 400px;
-    height: 400px;
-    position: relative;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 20px;
-    border:rgb(46, 44, 44) solid 1px;
-    box-shadow: 5px 5px 15px black;
+.card {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+  border: rgb(46, 44, 44) solid 1px;
+  box-shadow: 5px 5px 15px black;
 }
 /* .bookmark{
     position: absolute;
     top: 75%;
     right: 10%;
 } */
-.bookmark{
-    float: right;
+.bookmark {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star {
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+.content {
+  position: absolute;
+  left: -10px;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  transform: scale(0.9);
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  overflow: hidden;
+  transition: all 400ms;
+}
+.content h2 {
+  margin: 10px;
+}
+
+.content p {
+  font-size: 14px;
+}
+.card:hover .content {
+  height: 150px;
+}
+@media (max-width: 625px) {
+  .show-btn,
+  .hide-btn {
+    display: block;
+    transition: 0.3s;
+  }
+  header nav ul {
+    z-index: 3;
+    position: fixed;
+    right: -120%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.star{
-    height: 20px;
-    width: 20px;
-    margin: 4px;
-}
+    flex-direction: column;
+    top: 45px;
+    transition: 0.3s;
+    padding: 2% 0%;
+    width: auto;
+    background-color: blanchedalmond;
+  }
+  header nav ul li {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+  }
+  header nav ul li a {
+    border-radius: 5px;
+    padding: 7px 7px;
+  }
+  #login,
+  header nav ul li > div > button {
+    color: black;
+    padding: 7px 7px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+  }
 
-.card img{
-    position: absolute;
+  #check:checked ~ ul {
+    right: 0%;
     width: 100%;
-    height: 70%;
-    border-radius: 20px;
-}
-.content{
+    background-color: white;
+  }
+  #check:checked ~ .show-btn {
+    display: none;
+  }
+  .hide-btn {
     position: absolute;
-    left: -10px;
+    right: 10px;
+    top: -40px;
+  }
+  #hover {
+    display: none;
+  }
+}
+@media (max-width: 800px) and (min-width: 625px) {
+  .show-btn,
+  .hide-btn {
+    display: block;
+    transition: 0.3s;
+  }
+  header nav ul {
+    z-index: 3;
+    position: fixed;
+    right: -120%;
+    display: flex;
+    flex-direction: column;
+    top: 45px;
+    transition: 0.3s;
+    padding: 2% 0%;
+  }
+  header nav ul li {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+  }
+  header nav ul li a {
+    border-radius: 5px;
+    padding: 7px 7px;
+  }
+  #login,
+  header nav ul li > div > button {
+    border-radius: 5px;
+    color: black;
+    padding: 7px 7px;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+  }
+  #check:checked ~ ul {
+    right: 0%;
     width: 100%;
-    bottom: 0;
-    height: 50px;
-    padding: 10px;
-    font-size: 14px;
-    background-color: rgba(255, 255,255,0);
-    backdrop-filter: blur(20px);
-    transform: scale(0.9);
-    border: 1px solid rgba(255, 255,255,0.164);
-    overflow: hidden;
-    transition: all 400ms;
-}
-.content h2{
-    margin: 10px;
-}
-
-.content p{
-    font-size: 14px;
-}
-.card:hover .content{
-    height: 150px;
-}
-@media (max-width:625px){
-    .show-btn,.hide-btn{
-        display : block;
-        transition : 0.3s;
-    }
-    header nav ul{
-        z-index: 3;
-        position: fixed;
-        right:-120%;
-        display: flex;
-        flex-direction: column;
-        top: 45px;
-        transition: 0.3s;
-        padding: 2% 0%;
-        width: auto;
-        background-color: blanchedalmond;
-    }
-    header nav ul li{
-        text-align: center;
-        display: block;
-        font-size: 15px; ;
-    }
-    header nav ul li a{
-        border-radius: 5px;
-        padding: 7px 7px;
-
-    }
-    #login, header nav ul li > div > button{
-        color: black;
-        padding: 7px 7px;
-        font-size: 15px;
-        display: block;
-        margin: auto;
-    }
-    
-    #check:checked ~ ul{
-        right:0%;
-        width: 100%;
-        background-color: white;
-    }
-    #check:checked ~ .show-btn{
-        display: none;
-    }
-    .hide-btn{
-        position: absolute;
-        right: 10px;
-        top: -40px;
-    }
-    #hover {
-        display: none;
-    }
-}
-@media (max-width:800px) and (min-width:625px){
-    .show-btn,.hide-btn{
-        display : block;
-        transition : 0.3s;
-    }
-    header nav ul{
-        z-index: 3;
-        position: fixed;
-        right:-120%;
-        display: flex;
-        flex-direction: column;
-        top: 45px;
-        transition: 0.3s;
-        padding: 2% 0%;
-    }
-    header nav ul li{
-        text-align: center;
-        display: block;
-        font-size: 15px; ;
-    }
-    header nav ul li a{
-        border-radius: 5px;
-        padding: 7px 7px;
-
-    }
-    #login, header nav ul li > div > button{
-        border-radius: 5px;
-        color: black;
-        padding: 7px 7px;
-        font-size: 15px;
-        display: block;
-        margin: auto;
-    }
-    #check:checked ~ ul{
-        right:0%;
-        width: 100%;
-        background-color: white;
-    }
-    #check:checked ~ .show-btn{
-        display: none;
-    }
-    .hide-btn{
-        position: absolute;
-        right: 10px;
-        top: -40px;
-    }
-    #hover {
-        display: none;
-    }
-   
+    background-color: white;
+  }
+  #check:checked ~ .show-btn {
+    display: none;
+  }
+  .hide-btn {
+    position: absolute;
+    right: 10px;
+    top: -40px;
+  }
+  #hover {
+    display: none;
+  }
 }
 
-.toggleBookmark{
-    fill: black;
+.toggleBookmark {
+  fill: black;
 }

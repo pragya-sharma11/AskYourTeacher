@@ -6,8 +6,8 @@ var cn = document.getElementById("computerNetworks");
 var dbms = document.getElementById("dbms");
 var bookmarks = document.getElementsByClassName("bookmark");
 
-function toggleBookmark(a){
-   a.classList.toggle("toggleBookmark")
+function toggleBookmark(a) {
+  a.classList.toggle("toggleBookmark");
 }
 
 fullstack.onclick = () => {
