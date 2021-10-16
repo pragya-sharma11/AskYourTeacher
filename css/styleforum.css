@@ -49,3 +49,6 @@ button:active{
     border-radius: 4px;
     color: black;
 }
+ul{
+    list-style: none;
+}
