@@ -1,7 +1,7 @@
 window.onload=()=>{
     var ul = document.getElementById('list')
     var input = document.getElementById('input')
-    var submit = document.getElementById('submit')
+    var submit = document.getElementById('submitQues')
     var count = 0
     submit.onclick=()=>{
         let val = input.value
