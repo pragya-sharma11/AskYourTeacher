@@ -54,13 +54,17 @@ header nav ul li a{
     display: block;
     width: 120px;
     border: none;
-    background-color: white;
+    background-color: transparent;
     color: rgb(100, 60, 60);
     font-weight: 100;
     font-size: 20px;
 }
+#name{
+    transition: 0.3s ease-in;
+}
 
 #name:hover ~ #hover{
+    text-align: left;
     display: inline;
 }
 #hover {
