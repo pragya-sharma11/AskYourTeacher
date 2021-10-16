@@ -10,5 +10,6 @@ window.onload=()=>{
         let li = document.createElement('li')
         li.innerText = `Question ${count} : ` + val
         ul.appendChild(li)
+        input.value=''
     }
 }
