@@ -13,7 +13,7 @@ header {
   padding: 2%;
   position: sticky;
   top: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(221, 253, 238);
   z-index: 3;
 }
 header h1 {
@@ -54,7 +54,7 @@ header nav ul li div button {
   display: block;
   width: 120px;
   border: none;
-  background-color: white;
+  background-color: rgb(221, 253, 238);
   color: rgb(100, 60, 60);
   font-weight: 100;
   font-size: 20px;
@@ -147,7 +147,7 @@ header nav ul li div button {
     transition: 0.3s;
     padding: 2% 0%;
     width: auto;
-    background-color: blanchedalmond;
+    background-color: rgb(221, 253, 238);
   }
   header nav ul li {
     text-align: center;
@@ -170,7 +170,7 @@ header nav ul li div button {
   #check:checked ~ ul {
     right: 0%;
     width: 100%;
-    background-color: white;
+    background-color: rgb(221, 253, 238);
   }
   #check:checked ~ .show-btn {
     display: none;
@@ -221,7 +221,7 @@ header nav ul li div button {
   #check:checked ~ ul {
     right: 0%;
     width: 100%;
-    background-color: white;
+    background-color: rgb(221, 253, 238);
   }
   #check:checked ~ .show-btn {
     display: none;
