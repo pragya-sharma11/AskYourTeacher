@@ -3,13 +3,20 @@ window.onload=()=>{
     var input = document.getElementById('input')
     var submit = document.getElementById('submitQues')
     var count = 0
+    
+    
     submit.onclick=()=>{
         let val = input.value
-        count++;
         console.log(val)
-        let li = document.createElement('li')
-        li.innerText = `Question ${count} : ` + val
-        ul.appendChild(li)
-        input.value=''
+        if(val!=''){
+            count++
+            let li = document.createElement('li')
+            li.innerText = `Question ${count} : ` + val
+            ul.appendChild(li)
+            input.value=''
+        }
+        else{
+            alert('please enter your question!!')
+        }
     }
 }
