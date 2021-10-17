@@ -22,7 +22,7 @@ $(document).ready(function () {
     var options = {
         part: 'snippet',
         key: 'AIzaSyAfnjIoG2Qdg7LKWCoW8a4eJzeEeVnLyhQ',
-        // maxResults: 20,
+        maxResults: 100,
         playlistId: 'PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi'
     }
 
