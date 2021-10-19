@@ -210,13 +210,13 @@ header nav ul li a{
     text-align: left;
     padding: 2%;
 }
-.courses > .container > .item > .link > a{
+.courses > .container > .item > .link > .a{
     color: rgb(6, 131, 89);
     text-decoration: none;
     transition: 0.3s;
 
 }
-.courses > .container > .item > .link > a:hover{
+.courses > .container > .item > .link > .a:hover{
     padding: 5px;
     font-size: 25px;
     text-decoration: underline;
