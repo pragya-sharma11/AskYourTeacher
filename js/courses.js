@@ -10,21 +10,6 @@ function toggleBookmark(a) {
   a.classList.toggle("toggleBookmark");
 }
 
-fullstack.onclick = () => {
-  window.location = "../index.html?course=fullstack";
-};
-os.onclick = () => {
-  window.location = "../index.html?course=os";
-};
-dsa.onclick = () => {
-  window.location = "../index.html?course=dsa";
-};
-java.onclick = () => {
-  window.location = "../index.html?course=java";
-};
-cn.onclick = () => {
-  window.location = "../index.html?course=cn";
-};
-dbms.onclick = () => {
-  window.location = "../index.html?course=dbms";
-};
+function handleClick (e) {
+  window.location = `playlist.html?course=${e.id}`;
+} 
