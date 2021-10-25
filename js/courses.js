@@ -1,15 +1,21 @@
-var fullstack = document.getElementById("fullStack");
-var os = document.getElementById("os");
-var dsa = document.getElementById("dsa");
-var java = document.getElementById("java");
-var cn = document.getElementById("computerNetworks");
-var dbms = document.getElementById("dbms");
-var bookmarks = document.getElementsByClassName("bookmark");
-
 function toggleBookmark(a) {
   a.classList.toggle("toggleBookmark");
 }
-
+var nam = document.getElementById('name')
+var clk = false;
 function handleClick (e) {
-  window.location = `playlist.html?course=${e.id}`;
+  if(nam.innerText=='')
+    alert('Please login at first!!')
+    else
+    window.location = `./pages/playlist.html?course=${e.id}`
 } 
+
+nam.onclick=()=>{
+  if(!clk){
+    hovers.style.display = 'inline-block'
+    clk = true;
+  }else{
+    hovers.style.display = 'none'
+    clk = false;
+  }
+}

@@ -7,64 +7,76 @@ html {
   --top-spacing: 100px;
   scroll-padding-top: var(--top-spacing);
 }
-header {
+header{
   display: flex;
   color: rgb(26, 25, 25);
   padding: 2%;
   position: sticky;
   top: 0;
-  background-color: rgb(221, 253, 238);
+  background-color: rgb(229, 250, 240);
   z-index: 3;
 }
-header h1 {
+header h1{
   color: rgb(6, 110, 76);
-  width: 30%;
+  width:40%;
 }
-header nav {
+header nav{
+  background-color: rgb(229, 250, 240);
   width: 70%;
   line-height: 35px;
 }
-header nav ul {
+header nav ul{
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-#check {
+
+#check{
   visibility: hidden;
   position: absolute;
 }
-.show-btn,
-.hide-btn {
+.show-btn, .hide-btn{
   color: black;
   font-size: 25px;
   float: right;
   display: none;
 }
-header nav ul li {
+header nav ul li{
   font-size: 20px;
 }
-header nav ul li a {
+header nav ul li a{
   text-decoration: none;
   color: black;
   font-weight: 100;
 }
-#login,
-header nav ul li div button {
+#login, header nav ul li div button{
   padding: 5%;
   display: block;
   width: 120px;
   border: none;
-  background-color: rgb(221, 253, 238);
+  background-color: transparent;
   color: rgb(100, 60, 60);
   font-weight: 100;
   font-size: 20px;
 }
-#name:hover ~ #hover {
-  display: inline;
+.log{
+  width: 120px;
+  height: 30px;
+  transition: 0.3s ease-in;
 }
-#hover {
-  display: none;
+#hovers {
+  display: none;   
 }
+.log:hover ~#hovers{
+  text-align: left;
+  display: block;
+}
+
+
+
+
+
 
 .courses {
   display: flex;
@@ -180,7 +192,7 @@ header nav ul li div button {
     right: 10px;
     top: -40px;
   }
-  #hover {
+  #hovers {
     display: none;
   }
 }
@@ -231,7 +243,7 @@ header nav ul li div button {
     right: 10px;
     top: -40px;
   }
-  #hover {
+  #hovers {
     display: none;
   }
 }

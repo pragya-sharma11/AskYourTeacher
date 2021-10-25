@@ -28,7 +28,7 @@ login.onclick=(e)=>{
     const email = error.email;
     // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error);
-    console.log(error)
+    console.log('user not logged in')
     // ...
   });
         
@@ -39,8 +39,7 @@ logout.onclick=(e)=>{
   signOut(auth);
   login.style.display = "block";
   Uname.innerText = "";
-  document.getElementById('hover').style.display = 'none';
-
+  document.getElementById('hovers').style.display = 'none';
 }
   
 
@@ -51,6 +50,8 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
+    Uname.innerText = user.displayName.slice(0,6)+"...";
+    login.style.display = "none";
     console.log("user exists")
     // ...
   } else {

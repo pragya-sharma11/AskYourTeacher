@@ -15,30 +15,32 @@
     <header>
       <h1>AskYourTeacher</h1>
       <nav>
-        <input type="checkbox" name="check" id="check" />
-        <label for="check" class="show-btn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html">Top Courses</a></li>
-          <li><a href="#">All Courses</a></li>
+          <input type="checkbox" name="check" id="check">
+              <label for="check" class="show-btn">
+                  <i class="fa fa-bars"></i>
+              </label>
+          <ul>
+              <li><a href="../index.html#banner">home</a></li>
+              <li><a href="../index.html#courses">top courses</a></li>
+              <li><a href="#">all courses</a></li>
+              
+              <li >
+                  <div class="log">
+                    <button id="login">login</button>
+                    <p id="name"></p>
+                    <div id="hovers">
+                      <a href="">Bookmarks</a>
+                      <button  id="logout">logout</button>
+                    </div>
+                  </div>
+              </li>
 
-          <li>
-            <button id="login">Login</button>
-            <p id="name"></p>
-            <div id="hover">
-              <a href="">Bookmarks</a>
-              <button id="logout">logout</button>
-            </div>
-          </li>
-
-          <label for="check" class="hide-btn">
-            <i class="fa fa-close"></i>
-          </label>
-        </ul>
+              <label for="check" class="hide-btn">
+                  <i class="fa fa-close"></i>
+              </label>
+          </ul>
       </nav>
-    </header>
+  </header>
     <h1
       style="
         margin-left: 25px;
@@ -227,6 +229,8 @@
         </div>
       </div>
     </div>
+    <script type="module" src="../db/auth.js"></script>
+    <script type="module" src="../db/login.js"></script>
     <script src="../js/courses.js"></script>
   </body>
 </html>

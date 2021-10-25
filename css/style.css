@@ -60,17 +60,19 @@ header nav ul li a{
     font-weight: 100;
     font-size: 20px;
 }
-#name{
+.log{
+    width: 120px;
+     
     transition: 0.3s ease-in;
 }
-
-#name:hover ~ #hover{
-    text-align: left;
-    display: inline;
-}
-#hover {
+#hovers {
     display: none;   
 }
+.log:hover ~#hovers{
+    text-align: left;
+    display: block;
+}
+
 
 .img{
     background-image: url(https://preview.colorlib.com/theme/universityedu/assets/img/hero/xh1_hero1.jpg.pagespeed.ic.nogT7L3zFj.webp);
