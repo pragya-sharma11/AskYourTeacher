@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmarks</title>
+    <link rel="stylesheet" href="../css/courses.css">
 </head>
 <body>
+    <header>
+        <h1>AskYourTeacher</h1>
+        <nav>
+            <input type="checkbox" name="check" id="check">
+                <label for="check" class="show-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            <ul>
+                <li><a href="../index.html#banner">home</a></li>
+                <li><a href="../index.html#courses">top courses</a></li>
+                <li><a href="#">all courses</a></li>
+                
+                <li >
+                    <div class="log">
+                      <button id="login">login</button>
+                      <p id="name"></p>
+                      <div id="hovers">
+                        <a href="">Bookmarks</a>
+                        <button  id="logout">logout</button>
+                      </div>
+                    </div>
+                </li>
+  
+                <label for="check" class="hide-btn">
+                    <i class="fa fa-close"></i>
+                </label>
+            </ul>
+        </nav>
+    </header>
     <h1
       style="
         margin-left: 25px;
@@ -15,13 +45,13 @@
         text-decoration: underline;
       "
     >
-      Our Courses
+      Your Favourites
     </h1>
     <div class="courses">
         <div class="card">
             <img src="../photos/dsa.jfif" alt="" id="ds" onclick="handleClick(this)"/>
             <div class="content">
-              <div class="bookmark" onclick="toggleBookmark(this.children[0])">
+              <!-- <div class="bookmark" onclick="toggleBookmark(this.children[0])">
                 <svg
                   class="star"
                   xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +67,7 @@
                   />
                 </svg>
                 Add Bookmark
-              </div>
+              </div> -->
               <h2>Data Structures and Algorithms</h2>
               <p>
                 Data structure is a blend of data organization, management,
