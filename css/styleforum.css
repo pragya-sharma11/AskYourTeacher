@@ -13,22 +13,25 @@ header{
     padding: 2%;
     position: sticky;
     top: 0;
-    background-color: rgb(221, 253, 238);
+    background-color: rgb(229, 250, 240);
     z-index: 3;
 }
 header h1{
     color: rgb(6, 110, 76);
-    width: 30%;
+    width:40%;
 }
 header nav{
+    background-color: rgb(229, 250, 240);
     width: 70%;
     line-height: 35px;
 }
 header nav ul{
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
+
 #check{
     visibility: hidden;
     position: absolute;
@@ -52,18 +55,23 @@ header nav ul li a{
     display: block;
     width: 120px;
     border: none;
-    background-color: white;
+    background-color: transparent;
     color: rgb(100, 60, 60);
     font-weight: 100;
     font-size: 20px;
 }
-
-#name:hover ~ #hover{
-    display: inline;
+.log{
+    width: 120px;
+    transition: 0.3s ease-in;
 }
-#hover {
+#hovers {
     display: none;   
 }
+.log:hover ~#hovers{
+    text-align: left;
+    display: block;
+}
+
 
 footer{
     width: 100%;
