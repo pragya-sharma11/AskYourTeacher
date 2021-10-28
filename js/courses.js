@@ -1,5 +1,12 @@
+window.Storage.cards=[]
 function toggleBookmark(a) {
-  a.classList.toggle("toggleBookmark");
+  if(window.Storage.user){
+    a.children[0].classList.toggle("toggleBookmark");
+    cards[0] =a.parent.children[0]
+  }
+  else
+    alert('Please login at first!!')
+
 }
 var nam = document.getElementById('name')
 var clk = false;

@@ -36,6 +36,7 @@ logout.onclick=(e)=>{
   e.preventDefault();
   signOut(auth);
   window.Storage.user = null;
+  window.Storage.cards=null;
   login.style.display = "block";
   Uname.innerText = "";
   document.getElementById('hovers').style.display = 'none';
