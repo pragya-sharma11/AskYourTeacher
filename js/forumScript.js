@@ -15,7 +15,7 @@
             if(val!=''){
                 count++
                 let li = document.createElement('li')
-                li.innerText = `Question ${count} : ` + val   //" ("+ window.Storage.user.displayName+')'
+                li.innerText = `Question ${count} : ` + val  + "  ( "+ window.Storage.user.displayName+' )'
                 ul.appendChild(li)
                 input.value=''
             }
