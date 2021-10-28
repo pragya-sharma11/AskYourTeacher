@@ -19,4 +19,15 @@ window.onload=()=>{
             alert('please enter your question!!')
         }
     }
+    nam.onclick=()=>{
+        if(!clk){
+            hovers.style.display = 'inline-block'
+            clk = true;
+        }else{
+            hovers.style.display = 'none'
+            clk = false;
+        }
+        
+    }
+    
 }
