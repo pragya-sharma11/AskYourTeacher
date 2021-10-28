@@ -62,15 +62,17 @@ header nav ul li a{
 }
 .log{
   width: 120px;
-  height: 30px;
   transition: 0.3s ease-in;
 }
 #hovers {
-  display: none;   
+  display: none; 
 }
 .log:hover ~#hovers{
   text-align: left;
   display: block;
+}
+#name{
+  cursor :pointer;
 }
 
 
@@ -245,6 +247,10 @@ header nav ul li a{
   }
   #hovers {
     display: none;
+    align-content: center;
+  }
+  .log{
+    margin: auto;
   }
 }
 

@@ -1,7 +1,7 @@
-window.onload=()=>{
+
     var ul = document.getElementById('list')
     var input = document.getElementById('input')
-    var submit = document.getElementById('submitQues')
+    var submit = document.getElementById('sendbtn')
     var count = 0
     var nam = document.getElementById('name')
     var hovers = document.getElementById('hovers')
@@ -15,7 +15,7 @@ window.onload=()=>{
             if(val!=''){
                 count++
                 let li = document.createElement('li')
-                li.innerText = `Question ${count} : ` + val
+                li.innerText = `Question ${count} : ` + val   //" ("+ window.Storage.user.displayName+')'
                 ul.appendChild(li)
                 input.value=''
             }
@@ -38,4 +38,3 @@ window.onload=()=>{
         
     }
     
-}

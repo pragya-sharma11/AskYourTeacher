@@ -71,6 +71,9 @@ header nav ul li a{
     text-align: left;
     display: block;
 }
+#name{
+   cursor :pointer;
+}
 
 
 .img{
@@ -297,6 +300,7 @@ footer > .copyright{
 }
 .ask{
     height: 50%;
+    width: 94%;
     border: black solid 1px;
     padding: 1.5% 1.8%;
     border-radius: 20px;
@@ -411,7 +415,17 @@ footer > .copyright{
     }
     #hovers {
         display: none;
+        margin: auto;
     }
+    #logout{
+        display: block;
+        margin-left:0 ;
+        padding: 0% 18%;
+        text-align: left;
+    }
+    .log{
+        margin: auto;
+      }
     .img{
         background-size: 700px 600px;
         font-size: 15px;

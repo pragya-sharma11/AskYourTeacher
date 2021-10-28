@@ -125,8 +125,23 @@ footer > .ask{
     border-radius: 4px;
     color: black;
 }
-ul{
+
+#list{
+    margin: 1% 0.5% 1% 0.5%;
     list-style: none;
+    padding: 0.8%;
+    border:solid rgb(221, 253, 238) 0.8px;
+}
+#list li:nth-child(even){
+    background-color: rgb(240, 250, 246) ;
+    border-radius: 10px ;
+}
+#list li{
+    padding: 1%  1% 1% 1%;
+    font-size: 18px;
+    font-weight:540;
+    text-align: left;
+    justify-content: center;
 }
 
 
