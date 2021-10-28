@@ -9,7 +9,8 @@ window.onload=()=>{
     
     
     submit.onclick=()=>{
-        let val = input.value
+        if(window.Storage.user)
+        {let val = input.value
         console.log(val)
         if(val!=''){
             count++
@@ -21,6 +22,10 @@ window.onload=()=>{
         else{
             alert('please enter your question!!')
         }
+    }
+    else{
+        alert("please login first")
+    }
     }
     nam.onclick=()=>{
         if(!clk){
