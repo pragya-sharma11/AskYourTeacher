@@ -15,12 +15,9 @@ login.onclick=(e)=>{
     // The signed-in user info.
     const user = result.user;
     console.log(user)
-    //login.innerText=user.displayName;
     login.style.display = "none";
     Uname.innerText = user.displayName.slice(0,6)+"...";
     window.Storage.user = user;
-    //document.getElementById('hover').style.display = 'inline';
-    // ...user
     }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
