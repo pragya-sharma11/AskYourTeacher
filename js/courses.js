@@ -4,10 +4,10 @@ function toggleBookmark(a) {
 var nam = document.getElementById('name')
 var clk = false;
 function handleClick (e) {
-  if(nam.innerText=='')
-    alert('Please login at first!!')
-    else
+  if(window.Storage.user)
     window.location = `./pages/playlist.html?course=${e.id}`
+  else
+    alert('Please login at first!!')
 } 
 
 nam.onclick=()=>{

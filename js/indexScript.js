@@ -3,17 +3,18 @@ var nam = document.getElementById('name')
 var hover = document.getElementById('hovers')
 var clk = false;
 function handleClick(e){
-    if(nam.innerText=='')
-    alert('Please login at first!!')
-    else
+    if(window.Storage.user)
     window.location = `./pages/playlist.html?course=${e.id}`
+    else
+    alert('Please login at first!!')
 }
 
 start.onclick=()=>{
-    if(nam.innerText=='')
-    alert('Please login at first!!')
-    else
+    if(window.Storage.user)
     window.location = `./pages/courses.html`
+    else
+    alert('Please login at first!!')
+    
 }
 nam.onclick=()=>{
     if(!clk){

@@ -18,6 +18,7 @@ login.onclick=(e)=>{
     //login.innerText=user.displayName;
     login.style.display = "none";
     Uname.innerText = user.displayName.slice(0,6)+"...";
+    window.Storage.user = user;
     //document.getElementById('hover').style.display = 'inline';
     // ...user
     }).catch((error) => {
@@ -37,6 +38,7 @@ let logout = document.getElementById('logout')
 logout.onclick=(e)=>{
   e.preventDefault();
   signOut(auth);
+  window.Storage.user = null;
   login.style.display = "block";
   Uname.innerText = "";
   document.getElementById('hovers').style.display = 'none';
@@ -52,11 +54,13 @@ onAuthStateChanged(auth, (user) => {
     const uid = user.uid;
     Uname.innerText = user.displayName.slice(0,6)+"...";
     login.style.display = "none";
+    window.Storage.user = user
     console.log("user exists")
     // ...
   } else {
     // User is signed out
     // ...
+    window.Storage.user = null
     console.log("signout successful")
   }
 });
