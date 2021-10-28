@@ -249,7 +249,13 @@ header nav ul li a{
     display: none;
     align-content: center;
   }
-  .log{
+  #logout{
+    display: block;
+    margin-left:0 ;
+    padding: 0% 18%;
+    text-align: left;
+}
+.log{
     margin: auto;
   }
 }
