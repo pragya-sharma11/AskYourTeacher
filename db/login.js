@@ -2,7 +2,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signO
 var Uname = document.getElementById('name');
 var provider = new GoogleAuthProvider();
 var login = document.getElementById('login');
-console.log(login);
+// console.log(login);
 login.onclick=(e)=>{
   e.preventDefault();
         
@@ -14,7 +14,7 @@ login.onclick=(e)=>{
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
-    console.log(user)
+    // console.log(user)
     login.style.display = "none";
     Uname.innerText = user.displayName.slice(0,6)+"...";
     window.Storage.user = user;
