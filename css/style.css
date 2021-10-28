@@ -389,7 +389,7 @@ footer > .copyright{
         padding: 7px 7px;
 
     }
-    #login, header nav ul li > div > button{
+    #login, header nav ul li > .log > #hovers{
         color: black;
         padding: 7px 7px;
         font-size: 15px;
@@ -409,7 +409,7 @@ footer > .copyright{
         right: 10px;
         top: -40px;
     }
-    #hover {
+    #hovers {
         display: none;
     }
     .img{
