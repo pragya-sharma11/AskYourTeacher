@@ -3,6 +3,9 @@ window.onload=()=>{
     var input = document.getElementById('input')
     var submit = document.getElementById('submitQues')
     var count = 0
+    var nam = document.getElementById('name')
+    var hovers = document.getElementById('hovers')
+    var clk = false;
     
     
     submit.onclick=()=>{

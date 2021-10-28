@@ -1,6 +1,6 @@
 var start = document.getElementById('start')
 var nam = document.getElementById('name')
-var hover = document.getElementById('hovers')
+var hovers = document.getElementById('hovers')
 var clk = false;
 function handleClick(e){
     if(window.Storage.user)
