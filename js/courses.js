@@ -1,18 +1,22 @@
-window.Storage.cards=[]
+// cards=[]
+// var i=0;
 function toggleBookmark(a) {
   if(window.Storage.user){
     a.children[0].classList.toggle("toggleBookmark");
-    cards[0] =a.parent.children[0]
+    // if(cards.includes(a.parentElement.parentElement)){
+    //   cards[i] =a.parentElement.parentElement
+    //   i=i+1;
+    //   console.log(window.Storage.cards);
+    // }
   }
   else
     alert('Please login at first!!')
-
 }
 var nam = document.getElementById('name')
 var clk = false;
 function handleClick (e) {
   if(window.Storage.user)
-    window.location = `./pages/playlist.html?course=${e.id}`
+    window.location = `./playlist.html?course=${e.id}`
   else
     alert('Please login at first!!')
 } 

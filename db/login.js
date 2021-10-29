@@ -40,6 +40,7 @@ logout.onclick=(e)=>{
   login.style.display = "block";
   Uname.innerText = "";
   document.getElementById('hovers').style.display = 'none';
+  window.location='../index.html'
 }
   
 
